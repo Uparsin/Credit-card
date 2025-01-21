@@ -23,7 +23,7 @@ def main():
             to_add = (int(v) * 2 // 10) + (int(v) * 2 % 10)
             luth_check += to_add
 
-    if card_validate(card):
+    if not card_validate(card):
         print("Sorry, we don't support cards of your credit card company yet!")
     else:
         if luth_check % 10 != 0:
